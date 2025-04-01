@@ -1,46 +1,65 @@
+/* Reset and Box Sizing */
 * {
   box-sizing: border-box;
-}
-
-body {
   margin: 0;
-  font-family: system-ui, sans-serif;
-  color: black;
-  background-color: white;
+  padding: 0;
 }
 
+/* General Body Styling */
+body {
+  font-family: system-ui, sans-serif;
+  color: #333;
+  background-color: #fdfdfd;
+  line-height: 1.6;
+}
+
+/* Navigation Bar */
 nav {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  padding: 0.5rem;
-  gap: 0.5rem;
-  border-bottom: solid 1px #aaa;
-  background-color: #eee;
+  padding: 0.75rem;
+  gap: 0.75rem;
+  border-bottom: solid 1px #bbb;
+  background-color: #f4f4f4;
 }
 
+/* Navigation Links */
 nav a {
   display: inline-block;
   min-width: 9rem;
-  padding: 0.5rem;
-  border-radius: 0.2rem;
-  border: solid 1px #aaa;
+  padding: 0.6rem;
+  border-radius: 0.3rem;
+  border: solid 1px #bbb;
   text-align: center;
   text-decoration: none;
-  color: #555;
+  color: #444;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #e0e0e0;
 }
 
 nav a[aria-current='page'] {
   color: #000;
-  background-color: #d4d4d4;
+  background-color: #ccc;
+  font-weight: bold;
 }
 
+/* Main Content */
 main {
   padding: 1rem;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
+/* Headings */
 h1 {
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #222;
 }
